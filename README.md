@@ -18,3 +18,6 @@ The screen has to show time and date and increment without resetting the page.
 make four objects hour (h), minuet (m), and second (s);
 
 make an imput method to change the alarm 
+
+add a button that will change 12hr to 24hr
+
