@@ -1,5 +1,11 @@
-
-    var clock = new Date();
+    function clock() {
+      var clock = new Date();
     
-    document.getElementById("clock").innerHTML = clock;
-    console.log(time);
+        document.getElementById("clock").innerHTML = clock;
+    
+    }
+    
+    setTimeout(clock, 1000);
+    console.log(clock);
+
+    
