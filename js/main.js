@@ -8,12 +8,13 @@
       var year = clock.getFullYear();
 
 
-      var liveTime = hour + ":" + min + ":" + sec + " Month - " + month + "/" + day + "/" + year;
-    
+      var liveTime = hour + ":" + min + ":" + sec;
+      var date = "Date: " + month + "/" + day + "/" + year;
         
-    
-    
+    if (document.getElementByid("alarm") === liveTime)
+
        document.getElementById("clock").innerHTML = liveTime;
+       document.getElementById("date").innerHTML = date;
         console.log(clock);
         
     }

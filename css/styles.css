@@ -1,5 +1,11 @@
-h1, p {
-    font-family: fantasy;
+p {
+    font-family: 'Courier New', Courier, monospace;
     color: #2a2a2a;
+    font-size: 4rem;
+}
+
+h1 {
+    font-family: fantasy;
+    color: burlywood;
     font-size: 4rem;
 }
