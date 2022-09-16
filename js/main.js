@@ -11,11 +11,13 @@
       var liveTime = hour + ":" + min + ":" + sec;
       var date = "Date: " + month + "/" + day + "/" + year;
         
-    if (document.getElementByid("alarm") === liveTime)
+    // if (document.getElementByid("alarm") === liveTime)
 
        document.getElementById("clock").innerHTML = liveTime;
        document.getElementById("date").innerHTML = date;
-        console.log(clock);
+       
+       
+       console.log(clock);
         
     }
     
