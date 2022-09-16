@@ -9,3 +9,18 @@ p {
     color: burlywood;
     font-size: 4rem;
 }
+
+#popup {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    display: none;
+}
+
+#popup > #inner {
+    margin: auto;
+    background-color: #f00;
+    color: #000;
+    font-size: 24px;
+}
