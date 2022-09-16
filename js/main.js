@@ -1,6 +1,5 @@
 var liveTime = "";
 var x = "";
-var alarmSound
 var alarmSound = new Audio("audio/KZQVUA6-alarm-fire-alarm-buzzer-02.mp3"); 
 
 
@@ -36,9 +35,12 @@ function clock() {
  
    setInterval(clock, 1000);
   
-   function reset() {
-          alarmSound.loop = false;
-          alarmSound.
+   function snooze() {
+    
+    
+alarmSound.pause();
+    
+        
    }
   
    
@@ -46,10 +48,6 @@ function clock() {
     x = document.getElementById("alarmNumbers").value;
     document.getElementById("alarmDisplay").innerHTML = x;
     
-    
-   
-  
- 
   }
   
 
