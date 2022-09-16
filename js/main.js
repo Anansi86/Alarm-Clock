@@ -13,9 +13,9 @@ function clock() {
       var year = clock.getFullYear();
       var timeOfDay = (hour < 12) ? "AM" : "PM"
 
-      hour = ( hour > 12 ) ? hour - 12 : hour;
-      min = ( min < 10 ? "0" : "" ) + min;
-      sec = ( sec < 10 ? "0" : "" ) + sec;
+      hour = (hour > 12) ? hour - 12 : hour;
+      min = (min < 10 ? "0" : "") + min;
+      sec = (sec < 10 ? "0" : "") + sec;
       
       liveTime = hour + ":" + min + ":" + sec + timeOfDay;
       var date = "Date: " + month + "/" + day + "/" + year;
@@ -25,8 +25,8 @@ function clock() {
        
        
       // console.log(clock);
-          console.log(liveTime);
-          console.log(x);
+       //   console.log(liveTime);
+         // console.log(x);
 
             alarmSound.loop = true;
 
@@ -38,18 +38,14 @@ function clock() {
    setInterval(clock, 1000);
   
    function snooze() {
-    
-    
-alarmSound.pause();
-    
-        
-   }
+    alarmSound.pause();
+    }
   
    
    function alarm() {
     x = document.getElementById("alarmNumbers").value;
     document.getElementById("alarmDisplay").innerHTML = x;
     
-  }
+    }
   
 
