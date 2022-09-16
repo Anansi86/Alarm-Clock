@@ -1,7 +1,10 @@
 var liveTime = "";
 var x = "";
+var alarmSound
+var alarmSound = new Audio("audio/KZQVUA6-alarm-fire-alarm-buzzer-02.mp3"); 
 
- function clock() {
+
+function clock() {
       var clock = new Date();
       var hour = clock.getHours();
       var min = clock.getMinutes();
@@ -24,15 +27,21 @@ var x = "";
           console.log(liveTime);
           console.log(x);
 
+            alarmSound.loop = true;
+
        if (x == liveTime) {    
-        //alert ("Wake up");
-        document.getElementById("popup").style.display = "block";
+        document.getElementById("popup").style.display = "block"; alarmSound.play()
         }
     }
  
    setInterval(clock, 1000);
   
-    
+   function reset() {
+          alarmSound.loop = false;
+          alarmSound.
+   }
+  
+   
    function alarm() {
     x = document.getElementById("alarmNumbers").value;
     document.getElementById("alarmDisplay").innerHTML = x;
