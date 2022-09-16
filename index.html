@@ -10,18 +10,26 @@
 </head>
    
 <body>
-    <h1 class="text">Ye olde Time</h1>
 
-    <p id="clock"></p>
+
+    <div class="container">
+        <h1 class="text">Ye olde Time</h1>
+
+         <p id="clock"></p>
    
-    <p id="date"></p>
+         <p id="date"></p>
 
-    <input type="text" id="alarmNumbers" value="Set Alarm here">
-    <button onclick="alarm()">Set</button>
+         <input type="text" id="alarmNumbers" placeholder="Set Alarm here">
+    
+         <button onclick="alarm()">Set</button>
   
-    <p id="alarmDisplay"></p>
+         <p id="alarmDisplay"></p>
 
+    <div id="popup"><div id="inner">Wake Up</div></div>
 
+    <button id="snoozeButton" type="button" onclick="snooze()">Snooze</button>
     <script src="js/main.js"></script>
+
+    </div>
 </body>
 </html>

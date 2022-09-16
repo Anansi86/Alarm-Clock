@@ -1,11 +1,42 @@
+
 p {
     font-family: 'Courier New', Courier, monospace;
     color: #2a2a2a;
     font-size: 4rem;
+    margin: auto; 
 }
 
 .text {
     font-family: fantasy;
     color: burlywood;
     font-size: 4rem;
+    margin: auto;
+}
+
+#popup {
+    position: center;
+    top: 0;
+    width: 100%;
+    left: 0;
+    display: none;
+
+}
+
+#popup > #inner {
+    text-align: center;
+    margin: auto;
+    background-color: #f00;
+    color: white;
+    font-size: 50px;
+}
+
+
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+#date {
+    font-size: 2rem;
 }
