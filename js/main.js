@@ -13,11 +13,13 @@ function clock() {
       var year = clock.getFullYear();
       var timeOfDay = (hour < 12) ? "AM" : "PM"
 
+      hour = ( hour > 12 ) ? hour - 12 : hour;
+      min = ( min < 10 ? "0" : "" ) + min;
+      sec = ( sec < 10 ? "0" : "" ) + sec;
+      
       liveTime = hour + ":" + min + ":" + sec + timeOfDay;
       var date = "Date: " + month + "/" + day + "/" + year;
-        
       
- 
        document.getElementById("clock").innerHTML = liveTime;
        document.getElementById("date").innerHTML = date;
        
